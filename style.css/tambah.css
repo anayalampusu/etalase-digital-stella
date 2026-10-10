@@ -1,0 +1,107 @@
+:root {
+    --primary: #e11d48;
+    --primary-hover: #be123c;
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 650px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+form input[type="text"],
+form input[type="url"],
+form input[type="file"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+form input:focus, 
+form textarea:focus, 
+form select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.15);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(225, 29, 72, 0.2);
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background-color: #64748b;
+    margin-left: 0.5rem;
+    box-shadow: none;
+}
+
+.btn-danger:hover {
+    background-color: #475569;
+}

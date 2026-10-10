@@ -1,0 +1,115 @@
+:root {
+    --primary: #e11d48;
+    --primary-hover: #be123c;
+    --text-color: #1f2937;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #18181b 0%, #4c0519 50%, #881337 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 1.5rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #374151;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(209, 213, 219, 0.8);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+form input:focus {
+    background: #ffffff;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.15);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.85rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+}
+
+.btn:hover {
+    background: var(--primary-hover);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.link-login {
+    display: block;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
+    color: #374151;
+    text-decoration: none;
+}
+
+.link-login a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-login a:hover {
+    text-decoration: underline;
+}
